@@ -90,7 +90,7 @@ select first_name, last_name, salary from employees
 where first_name like '__ev%';
 
 -- escape '\' 와일드카드(_ / %) 문자가 데이터의 일부분의 경우
--- 해당 와잍드카드 문자 앞에 \ 작성
+-- 해당 와일드카드(_ / %) 문자 앞에 \ 작성
 select first_name, last_name, job_id from employees
 where job_id like 'AC\_A%' escape '\';
 
@@ -193,6 +193,10 @@ from employees;
 select employee_id, salary, salary*nvl(commission_pct, 0.5) comm, salary + salary*nvl(commission_pct, 0.5) "sal+comm"
 from employees;
 
+select employee_id, salary, salary*nvl(commission_pct, 0.5) comm, 
+salary + salary*nvl2(commission_pct, commission_pct, 0.5) "sal+comm"
+from employees;
+
 select employee_id, nvl2(commission_pct, 'O', 'X') from employees;
 
 -- decode 함수, case 문
@@ -207,4 +211,3 @@ salary*10) as sal -- default
 from employees;
 
 -- case 대상 when 조건1 then 결과1  when 조건2 then 결과2 ...  when 조건n then 결과n else default end
-
