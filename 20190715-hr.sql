@@ -159,7 +159,7 @@ select avg(salary), trunc(avg(salary), 2) 평균급여 from employees;
 -- mod 나머지값 구하기
 
 -- 날짜 데이터 함수
--- add_months, months_between, next_dat, last_day : 달의 마지막 날짜
+-- add_months, months_between, next_date, last_day : 달의 마지막 날짜
 select months_between(sysdate, hire_date) from employees;
 
 -- 자료 변환 함수

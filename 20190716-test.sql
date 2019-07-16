@@ -59,7 +59,7 @@ select * from member where num < all (3, 5, 7);
 -- update
 UPDATE "TEST"."MEMBER" 
 SET USER_NAME = 'lee5' 
-WHERE ROWID = 'AAAE5pAABAAALDxAAE' s
+WHERE ROWID = 'AAAE5pAABAAALDxAAE'
 AND ORA_ROWSCN = '393178';
 
 select rowid, rownum, num, user_name from member;
