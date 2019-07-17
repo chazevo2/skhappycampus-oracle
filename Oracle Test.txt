@@ -1,0 +1,119 @@
+1. 다음 중 Oracle 에서 주요 용어에 대한 설명으로 바르지 않은 것은 무엇입니까? *
+① table:관계형 db에서 기본데이터 저장구조,Entity
+② row:테이블의 열을 의미*
+③ primary key:테이블에서 각 행을 유일하게 구분하는 제약조건
+④ null:데이터가 존재하지 않는 필드값
+
+2. 다음 중 Oracle 에서 사용할 수 없는 type은 무엇입니까? *
+① varchar2
+② char
+③ date
+④ int*
+
+3. 다음 중 연결이 잘못 된 것은 무엇입니까? *
+① DQL : select
+② DML : insert
+③ DDL : delete*
+④ TCL : commit
+
+4. 다음 중 Oracle 에서 잘못된 쿼리문은 무엇입니까? *
+① select * from dual;
+② select ‘a’+’b’ from dual;*
+③ select count(*) from dual;
+④ select 10+20 from dual;
+
+5. 다음 중 Oracle 에서 중복제거시 사용하는 용어는 무엇입니까? *
+① desc
+② not null
+③ distinct
+④ union
+
+6. 다음 중 Oracle 에서 정렬시 사용하는 용어는 무엇입니까? *
+① sort
+② order by*
+③ order list
+④ list
+
+7. 다음 중 Oracle 에서 별칭사용이 잘못 된 것은 무엇입니까? *
+① select JOB_ID "직업", SALARY "봉급" from employees;
+② select JOB_ID, SALARY AS "봉급 \천원" from employees;
+③ select JOB_ID id, SALARY AS 봉급 from employees;
+④ select JOB_ID id, SALARY AS 10월 from employees;*
+
+8. 다음 중 Oracle 에서 연산자 연결이 바르지 않은 것은 무엇입니까? *
+① 산술연산자 : +
+② 비교연산자 : ==*
+③ 논리연산자 : and
+④ 집합연산자 : union
+
+9. 다음 중 Oracle 에서 조건문 구현 시 문자열에 포함된 문자유무로 비교 할 수 있는 연산자는 무엇입니까? *
+① ==
+② like*
+③ equals
+④ is null
+
+10. 다음 중 Oracle 에서 연산자 우선순위가 가장 낮은 것은 무엇입니까? *
+① 산술연산자
+② like
+③ not
+④ or*
+
+11. 다음 중 Oracle 에서 시작문자만 대문자로 바꿔주는 함수는 무엇입니까? *
+① chr
+② concat
+③ initcap*
+④ upper
+
+12. 다음 Oracle 에서 문자열 출력시 대상문자열의 왼쪽부분을 지울때 사용하는 함수는 무엇입니까? *
+① LPAD
+② RPAD
+③ LTRIM*
+④ RTRIM
+
+13. 다음 중 Oracle 에서 검색결과 데이터가 NULL일 때 대체값을 설정할 수 있는 함수는 무엇입니까? *
+① NVL*
+② INSTR
+③ IS NOT NULL
+④ JOIN
+
+14. 다음 중 Oracle 에서 시스템날짜를 반환하는 함수는 무엇입니까? *
+① SYSDATE*
+② DEFAULT DATE
+③ DATE
+④ NOW
+
+15. 다음 중 Oracle 에서 날짜타입데이터를 문자타입데이터로 변환하는 함수는 무엇입니까? *
+① TO_DATE
+② TO_TIME
+③ TO_STRING
+④ TO_CHAR*
+
+16. 다음 중 실행 결과가 1234.57 이라는 출력문을 얻기 위한 바른 것은 무엇입니까? *
+① select ROUND(1234.5678, 2) from dual;
+② select ROUND(1234.5678, 3) from dual;
+③ select TRUNC(1234.5678, 2) from dual;
+④ select TRUNC(1234.5678, 3) from dual;
+
+17. 다음 중 하나의 테이블로는 원하는 컬럼정보를 참조할 수 없는 경우 관련된 테이블을 논리적으로 결합하여 원하는 컬럼정보를 참조하는 방법을 의미하는 것은 무엇입니까? *
+① UNION ALL
+② ALL
+③ SUM
+④ JOIN*
+
+18.다음 중 테이블간의 조인시 모든테이블의 NULL 값도 표기되도록 하는 조인 방법은 무엇입니까? *
+① FULL OUTER JOIN*
+② LEFT OUTER JOIN
+③ RIGHT OUTER JOIN
+④ INNER JOIN
+
+19. 다음 중 하나의 SQL문장절에 부속된 또 다른 SELECT문장을 통해 두번 이상의 질의를 해야하는 결과를 한번의 질의로 해결이 가능케하는 것은 무엇입니까? *
+① MAIN QUERY
+② OUTER QUERY
+③ SUB QUERY*
+④ SUB STRING
+
+20. 다음 중 제약조건에 대한 설명으로 바르지 않은 것은 무엇입니까? *
+① PRIMARY KEY : 하나의 테이블에 오직 하나만 존재하며 자동으로 인텍스가 부여된다
+② FOREIGN KEY : 부모테이블의 PRIMARY KEY를 참조한다.
+③ UNIQUE : 중복데이터와 NULL값을 허용하지 않는다.*
+④ NOT NULL : NULL 값이 입력되지 않도록 제약한다.
